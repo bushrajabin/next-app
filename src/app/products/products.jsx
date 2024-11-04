@@ -10,7 +10,7 @@ export default async function Products() {
   const products = data.products; // 'products' is an array inside the fetched JSON
 
   return (
-    <div className=" flex flex-row flex-wrap justify-center ">
+    <div className=" flex flex-row flex-wrap justify-center bg-white ">
       {products.map((product) => (
         <div
           key={product.id}

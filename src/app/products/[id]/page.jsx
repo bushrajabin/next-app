@@ -7,7 +7,7 @@ async function getProduct(id) {
 export default async function productDetails({ params }) {
   const product = await getProduct(params.id);
   return (
-    <div className=" flex flex-col">
+    <div className=" flex flex-col bg-white">
       <nav>
         <h2 className="text-2xl text-center font-bold p-6 underline ">product details</h2>
       </nav>
