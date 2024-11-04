@@ -1,9 +1,12 @@
 async function getProducts() {
+
+  await new Promise(resolve=>setTimeout(resolve,2000))
   const res = await fetch("https://dummyjson.com/products");
   return res.json();
 }
 
 import Link from "next/link";
+import { resolve } from "styled-jsx/css";
 
 export default async function Products() {
   const data = await getProducts();
